@@ -17,7 +17,8 @@ body {
 .card-img-top {
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    max-height: 400px; /* Maksimum tinggi gambar pada kartu */
+    max-height: 400px;
+    min-height: 400px;/* Maksimum tinggi gambar pada kartu */
     object-fit: cover; /* Menjaga aspek rasio gambar */
     width: 100%; /* Menyesuaikan lebar gambar agar sesuai dengan parent */
     height: 100%; /* Menyesuaikan tinggi gambar agar sesuai dengan parent */
