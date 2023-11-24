@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+    background-color: #f8f9fa; /* Warna latar belakang yang lembut */
+    font-family: 'Open Sans', sans-serif; /* Pilihan font yang bersahaja dan mudah dibaca */
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk elemen kartu */
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 400px; /* Maksimum tinggi gambar pada kartu */
+    object-fit: cover; /* Menjaga aspek rasio gambar */
+    width: 100%; /* Menyesuaikan lebar gambar agar sesuai dengan parent */
+    height: 100%; /* Menyesuaikan tinggi gambar agar sesuai dengan parent */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #4CAF50; /* Warna tombol hijau yang mencolok */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Warna tombol yang berbeda saat dihover */
+    border: none;
+}
+
+h1, h5 {
+    color: #4CAF50; /* Warna judul */
+}
+
+p {
+    color: #555; /* Warna teks yang lebih gelap */
+}
+
+.btn-primary,
+.btn-primary:hover {
+    color: #fff; /* Warna teks pada tombol */
+}
+
+/* Media query untuk membuat tata letak responsif */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+    }
+
+    .card-img-top {
+        max-height: 150px;
+    }
+}

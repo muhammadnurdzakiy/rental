@@ -1,0 +1,118 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.a.n Adventure - Rental Alat Outdoor</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>D.a.n Adventure - Rental Alat Outdoor</h1>
+        <p>Sewa alat outdoor untuk petualangan Anda!</p>
+
+        <!-- Daftar alat outdoor -->
+        <div class="row">
+            <div class="col-md-4" id="item1">
+                <div class="card">
+                    <img src="https://e7.pngegg.com/pngimages/999/204/png-clipart-tent-tent.png" class="card-img-top img-fluid" alt="Tenda Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tenda</h5>
+                        <p class="card-text">Alat penting untuk berkemah di alam terbuka.</p>
+                        <p class="card-text">Harga: $10 per malam</p>
+                        <a href="#" class="btn btn-primary" onclick="sewaViaWhatsApp('item1')">Sewa via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tambahkan 2 item kartu lainnya di sini -->
+
+            <div class="col-md-4" id="item2">
+                <div class="card">
+                    <img src="https://e7.pngegg.com/pngimages/999/204/png-clipart-tent-tent.png" class="card-img-top img-fluid" alt="Tenda Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Deskripsi item 2.</p>
+                        <p class="card-text">Harga: $XX per XXX</p>
+                        <a href="#" class="btn btn-primary" onclick="sewaViaWhatsApp('item2')">Sewa via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" id="item3">
+                <div class="card">
+                    <img src="https://e7.pngegg.com/pngimages/999/204/png-clipart-tent-tent.png" class="card-img-top img-fluid" alt="Tenda Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 3</h5>
+                        <p class="card-text">Deskripsi item 3.</p>
+                        <p class="card-text">Harga: $XX per XXX</p>
+                        <a href="#" class="btn btn-primary" onclick="sewaViaWhatsApp('item3')">Sewa via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-4" id="item4">
+                <div class="card">
+                    <img src="https://telegra.ph/file/d806106653c40b5d185b2.png" class="card-img-top img-fluid" alt="Tenda Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Item 2</h5>
+                        <p class="card-text">Cap 4 dobel layer </p>
+                        <p class="card-text">Harga: 30.000 per hari</p>
+                        <a href="#" class="btn btn-primary" onclick="sewaViaWhatsApp('item4')">Sewa via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Tambahkan item kartu lainnya sesuai kebutuhan -->
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-U7UqOJ7pFccbm2nK3Zl5n5kgUpn5s6x5t8hWZNmuhEJl5u9U6bGk5PjFf4NU3bxy"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function sewaViaWhatsApp(itemId) {
+            var card = document.getElementById(itemId);
+            var title = card.querySelector('.card-title').innerText;
+            var description = card.querySelector('.card-text').innerText;
+            var price = card.querySelector('.card-text').nextElementSibling.innerText;
+
+            // Ganti nomor WhatsApp sesuai kebutuhan
+            var phoneNumber = "6281228386493";
+
+            // Format pesan sesuai kebutuhan
+            var message = "Halo, saya tertarik dengan alat outdoor berikut:\n\n" +
+                "Judul: " + title + "\n" +
+                "Deskripsi: " + description + "\n" +
+                "Harga: " + price;
+
+            // Buat link WhatsApp dengan pesan otomatis
+            var whatsappLink = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+            // Buka link WhatsApp di jendela baru
+            window.open(whatsappLink, '_blank');
+        }
+    </script>
+</body>
+
+</html>
