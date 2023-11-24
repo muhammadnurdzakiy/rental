@@ -1,0 +1,73 @@
+<!-- informasi.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi - D.a.n Adventure</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+   <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">D.a.n Adventure</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <h1>D.a.n Adventure - Rental Alat Outdoor Semarang</h1>
+        <p>Alamat: Jl. Palir Sejahtera Raya</p>
+
+        <!-- Gmap Button -->
+        <button class="btn btn-primary" onclick="openGMap()">Lihat di Google Maps</button>
+
+        <p>Semua pembayaran atas nama Dyazki.</p>
+
+        <!-- Social Media Links -->
+        <p>Ikuti kami di sosial media:</p>
+        <a href="https://www.instagram.com/dzaki" target="_blank" class="btn btn-info">Instagram</a>
+        <a href="https://www.facebook.com/dzaki" target="_blank" class="btn btn-primary">Facebook</a>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-U7UqOJ7pFccbm2nK3Zl5n5kgUpn5s6x5t8hWZNmuhEJl5u9U6bGk5PjFf4NU3bxy"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        function openGMap() {
+            // You can replace the coordinates with the actual location coordinates
+            var gmapLink = "https://www.google.com/maps?q=-7.2575, 112.7521";
+            window.open(gmapLink, '_blank');
+        }
+    </script>
+</body>
+
+</html>
